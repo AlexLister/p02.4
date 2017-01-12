@@ -29,4 +29,11 @@ def run_tests():
 
 def is_repeated(nums):
 
+    fletter = nums[0]
+    count = nums.count(fletter)
+    if count > 1:
+        print("Repeated")
+    if count == 1:
+        print("Unique")
+
 

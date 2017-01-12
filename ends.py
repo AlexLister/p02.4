@@ -25,5 +25,12 @@ def run_tests():
 
 
 def same_ends(nums):
+    if len(nums) < 1:
+        print("Empty")
+    else:
+        if nums[0] == nums[-1]:
+            print("Same")
+        else:
+            print("Different")
 
 

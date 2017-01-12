@@ -29,5 +29,14 @@ def run_tests():
 
 
 def clean(nums, n):
+    if n in nums:
+        count = nums.count(n)
+        for y in range(count):
+            nums.remove(n)
+            answer = nums
+    else:
+        answer = nums
+        
 
+    print(answer)
 

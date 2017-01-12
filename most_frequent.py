@@ -30,5 +30,17 @@ def run_tests():
 
 
 def mode(nums, a, b):
+    if a in nums and b in nums:
+        A_count = nums.count(a)
+        B_count = nums.count(b)
+        if A_count > B_count:
+            print(a)
+        elif B_count > A_count:
+            print(b)
+        else:
+            print("Tie")
 
+    else:
+        print("Neither")
+        
 
